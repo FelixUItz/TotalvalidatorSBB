@@ -30,27 +30,27 @@
  /* Page-specific styles for Runway Calculator */
 
  /* ── Main Layout ── */
-.tool-content.calc-grid {
+.tool-content .calc-grid {
  display: grid;
  grid-template-columns: 380px 1fr;
  gap: 24px;
  align-items: start;
  }
  @media (max-width: 900px) {
-.tool-content.calc-grid {
+.tool-content .calc-grid {
  grid-template-columns: 1fr;
  }
  }
 
  /* ── Card Base ── */
-.tool-content.calc-card {
+.tool-content .calc-card {
  background: #fff;
  border-radius: 12px;
  border: 1px solid var(--tb-border);
  box-shadow: 0 1px 3px rgba(0,0,0,0.04), 0 1px 2px rgba(0,0,0,0.06);
  overflow: hidden;
  }
-.tool-content.calc-card-header {
+.tool-content .calc-card-header {
  padding: 12px 20px;
  background: var(--tb-primary);
  color: #fff;
@@ -61,35 +61,35 @@
  align-items: center;
  gap: 8px;
  }
-.tool-content.calc-card-header.icon { font-size: 1rem; }
-.tool-content.calc-card-header.accent-header {
+.tool-content .calc-card-header.icon { font-size: 1rem; }
+.tool-content .calc-card-header.accent-header {
  background: var(--tb-accent);
  color: #1C1D1F;
  }
-.tool-content.calc-card-body { padding: 20px; }
+.tool-content .calc-card-body { padding: 20px; }
 
  /* ── Input Group ── */
-.tool-content.calc-input-group { margin-bottom: 18px; }
-.tool-content.calc-input-group:last-child { margin-bottom: 0; }
-.tool-content.calc-input-group label {
+.tool-content .calc-input-group { margin-bottom: 18px; }
+.tool-content .calc-input-group:last-child { margin-bottom: 0; }
+.tool-content .calc-input-group label {
  display: block;
  font-weight: 600;
  font-size: 0.8125rem;
  color: #1C1D1F;
  margin-bottom: 4px;
  }
-.tool-content.calc-input-group.helper {
+.tool-content .calc-input-group.helper {
  font-size: 0.6875rem;
  color: #6B7280;
  margin-bottom: 6px;
  line-height: 1.4;
  }
-.tool-content.input-wrap {
+.tool-content .input-wrap {
  position: relative;
  display: flex;
  align-items: center;
  }
-.tool-content.input-prefix {
+.tool-content .input-prefix {
  position: absolute;
  left: 12px;
  font-size: 0.875rem;
@@ -98,7 +98,7 @@
  pointer-events: none;
  z-index: 1;
  }
-.tool-content.input-suffix {
+.tool-content .input-suffix {
  position: absolute;
  right: 12px;
  font-size: 0.875rem;
@@ -107,7 +107,7 @@
  pointer-events: none;
  z-index: 1;
  }
-.tool-content.input-wrap input[type="number"] {
+.tool-content .input-wrap input[type="number"] {
  width: 100%;
  padding: 10px 12px 10px 28px;
  border: 1.5px solid var(--tb-border);
@@ -119,28 +119,28 @@
  transition: border-color 0.2s, box-shadow 0.2s;
  -moz-appearance: textfield;
  }
-.tool-content.input-wrap input[type="number"]::-webkit-outer-spin-button,
-.tool-content.input-wrap input[type="number"]::-webkit-inner-spin-button {
+.tool-content .input-wrap input[type="number"]::-webkit-outer-spin-button,
+.tool-content .input-wrap input[type="number"]::-webkit-inner-spin-button {
  -webkit-appearance: none;
  margin: 0;
  }
-.tool-content.input-wrap input[type="number"]:focus {
+.tool-content .input-wrap input[type="number"]:focus {
  outline: none;
  border-color: var(--tb-accent);
  box-shadow: 0 0 0 3px rgba(230, 57, 70, 0.12);
  background: #fff;
  }
-.tool-content.input-wrap.has-suffix input[type="number"] {
+.tool-content .input-wrap.has-suffix input[type="number"] {
  padding-right: 36px;
  }
 
  /* ── Divider & Section Label ── */
-.tool-content.section-divider {
+.tool-content .section-divider {
  border: none;
  border-top: 1px dashed var(--tb-border);
  margin: 20px 0;
  }
-.tool-content.calc-section-label {
+.tool-content .calc-section-label {
  font-size: 0.75rem;
  font-weight: 700;
  color: var(--tb-accent);
@@ -150,20 +150,20 @@
  }
 
  /* ── Slider ── */
-.tool-content.slider-group { margin-bottom: 16px; }
-.tool-content.slider-group:last-child { margin-bottom: 0; }
-.tool-content.slider-label {
+.tool-content .slider-group { margin-bottom: 16px; }
+.tool-content .slider-group:last-child { margin-bottom: 0; }
+.tool-content .slider-label {
  display: flex;
  justify-content: space-between;
  align-items: center;
  margin-bottom: 6px;
  }
-.tool-content.slider-label span:first-child {
+.tool-content .slider-label span:first-child {
  font-weight: 600;
  font-size: 0.8125rem;
  color: #1C1D1F;
  }
-.tool-content.slider-value {
+.tool-content .slider-value {
  font-size: 0.8125rem;
  font-weight: 700;
  color: var(--tb-accent);
@@ -207,7 +207,7 @@
  box-shadow: 0 1px 4px rgba(0,0,0,0.2);
  cursor: pointer;
  }
-.tool-content.slider-bounds {
+.tool-content .slider-bounds {
  display: flex;
  justify-content: space-between;
  font-size: 0.625rem;
@@ -216,13 +216,13 @@
  }
 
  /* ── Metric Cards Grid ── */
-.tool-content.metrics-grid {
+.tool-content .metrics-grid {
  display: grid;
  grid-template-columns: 1fr 1fr;
  gap: 12px;
  margin-bottom: 20px;
  }
-.tool-content.metric-card {
+.tool-content .metric-card {
  background: #fff;
  border: 1.5px solid var(--tb-border);
  border-radius: 10px;
@@ -230,19 +230,19 @@
  text-align: center;
  transition: border-color 0.3s, box-shadow 0.3s;
  }
-.tool-content.metric-card.green {
+.tool-content .metric-card.green {
  border-color: var(--tb-success);
  background: rgba(40, 167, 69, 0.04);
  }
-.tool-content.metric-card.yellow {
+.tool-content .metric-card.yellow {
  border-color: var(--tb-accent);
  background: rgba(245, 158, 11, 0.04);
  }
-.tool-content.metric-card.red {
+.tool-content .metric-card.red {
  border-color: var(--tb-danger);
  background: rgba(220, 53, 69, 0.04);
  }
-.tool-content.metric-card.metric-label {
+.tool-content .metric-card.metric-label {
  font-size: 0.6875rem;
  font-weight: 600;
  color: #6B7280;
@@ -250,37 +250,37 @@
  letter-spacing: 0.5px;
  margin-bottom: 4px;
  }
-.tool-content.metric-card.metric-value {
+.tool-content .metric-card.metric-value {
  font-size: 1.375rem;
  font-weight: 800;
  letter-spacing: -0.5px;
  line-height: 1.2;
  }
-.tool-content.metric-card.metric-unit {
+.tool-content .metric-card.metric-unit {
  font-size: 0.75rem;
  font-weight: 500;
  color: #6B7280;
  margin-top: 2px;
  }
-.tool-content.metric-card.green.metric-value { color: var(--tb-success); }
-.tool-content.metric-card.yellow.metric-value { color: var(--tb-accent); }
-.tool-content.metric-card.red.metric-value { color: var(--tb-danger); }
-.tool-content.metric-card.hidden { display: none; }
+.tool-content .metric-card.green.metric-value { color: var(--tb-success); }
+.tool-content .metric-card.yellow.metric-value { color: var(--tb-accent); }
+.tool-content .metric-card.red.metric-value { color: var(--tb-danger); }
+.tool-content .metric-card.hidden { display: none; }
 
  /* ── Chart Container ── */
-.tool-content.chart-container {
+.tool-content .chart-container {
  position: relative;
  width: 100%;
  height: 340px;
  margin-bottom: 20px;
  }
-.tool-content.chart-container canvas {
+.tool-content .chart-container canvas {
  width: 100%!important;
  height: 100%!important;
  }
 
  /* ── Benchmark Box ── */
-.tool-content.benchmark-box {
+.tool-content .benchmark-box {
  background: linear-gradient(135deg, rgba(230, 57, 70, 0.06), rgba(255, 140, 0, 0.06));
  border: 1px solid var(--tb-border);
  border-left: 4px solid var(--tb-accent);
@@ -288,18 +288,18 @@
  padding: 16px 18px;
  margin-bottom: 20px;
  }
-.tool-content.benchmark-box h3 {
+.tool-content .benchmark-box h3 {
  font-size: 0.875rem;
  font-weight: 700;
  color: var(--tb-primary);
  margin-bottom: 8px;
  }
-.tool-content.benchmark-box ul {
+.tool-content .benchmark-box ul {
  list-style: none;
  padding: 0;
  margin: 0;
  }
-.tool-content.benchmark-box li {
+.tool-content .benchmark-box li {
  font-size: 0.8125rem;
  color: #1C1D1F;
  padding: 4px 0;
@@ -307,7 +307,7 @@
  position: relative;
  line-height: 1.5;
  }
-.tool-content.benchmark-box li::before {
+.tool-content .benchmark-box li::before {
  content: "\2022";
  position: absolute;
  left: 6px;
@@ -316,12 +316,12 @@
  }
 
  /* ── CTA Buttons (inline) ── */
-.tool-content.calc-cta-section {
+.tool-content .calc-cta-section {
  display: flex;
  gap: 12px;
  flex-wrap: wrap;
  }
-.tool-content.calc-cta-btn {
+.tool-content .calc-cta-btn {
  flex: 1;
  min-width: 200px;
  display: inline-flex;
@@ -337,15 +337,15 @@
  text-decoration: none;
  transition: transform 0.15s, box-shadow 0.15s;
  }
-.tool-content.calc-cta-btn:hover {
+.tool-content .calc-cta-btn:hover {
  transform: translateY(-1px);
  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
  text-decoration: none;
  }
-.tool-content.calc-cta-btn:active { transform: translateY(0); }
-.tool-content.calc-cta-btn-primary { background: var(--tb-primary); color: #fff; }
-.tool-content.calc-cta-btn-accent { background: var(--tb-accent); color: #1C1D1F; }
-.tool-content.calc-cta-btn.btn-icon { font-size: 1rem; }
+.tool-content .calc-cta-btn:active { transform: translateY(0); }
+.tool-content .calc-cta-btn-primary { background: var(--tb-primary); color: #fff; }
+.tool-content .calc-cta-btn-accent { background: var(--tb-accent); color: #1C1D1F; }
+.tool-content .calc-cta-btn.btn-icon { font-size: 1rem; }
 
  /* ── Modal Overlay ── */
 .modal-overlay {
@@ -446,28 +446,28 @@
 
  /* ── Responsive ── */
  @media (max-width: 900px) {
-.tool-content.metrics-grid {
+.tool-content .metrics-grid {
  grid-template-columns: 1fr 1fr;
  }
-.tool-content.chart-container { height: 280px; }
-.tool-content.calc-cta-section { flex-direction: column; }
-.tool-content.calc-cta-btn { min-width: unset; }
+.tool-content .chart-container { height: 280px; }
+.tool-content .calc-cta-section { flex-direction: column; }
+.tool-content .calc-cta-btn { min-width: unset; }
  }
  @media (max-width: 500px) {
-.tool-content.metrics-grid { grid-template-columns: 1fr; }
-.tool-content.chart-container { height: 240px; }
-.tool-content.calc-card-body { padding: 16px; }
-.tool-content.metric-card.metric-value { font-size: 1.125rem; }
+.tool-content .metrics-grid { grid-template-columns: 1fr; }
+.tool-content .chart-container { height: 240px; }
+.tool-content .calc-card-body { padding: 16px; }
+.tool-content .metric-card.metric-value { font-size: 1.125rem; }
  }
  /* Print */
  @media print {
-.tool-content.calc-card,
-.tool-content.metric-card,
-.tool-content.benchmark-box {
+.tool-content .calc-card,
+.tool-content .metric-card,
+.tool-content .benchmark-box {
  -webkit-print-color-adjust: exact;
  print-color-adjust: exact;
  }
-.tool-content.calc-cta-section { display: none; }
+.tool-content .calc-cta-section { display: none; }
 .modal-overlay { display: none!important; }
  }
  </style>

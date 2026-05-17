@@ -61,14 +61,14 @@
  }
 
  /* ========== PAGE STRUCTURE (A4 print pages) ========== */
-.tool-content.page {
+.tool-content .page {
  max-width: 900px;
  margin: 0 auto;
  padding: 24px 0;
  }
 
  /* ========== HEADER (cheat-sheet internal header) ========== */
-.tool-content.cs-header {
+.tool-content .cs-header {
  display: flex;
  justify-content: space-between;
  align-items: center;
@@ -77,13 +77,13 @@
  margin-bottom: 16px;
  }
 
-.tool-content.cs-header-left {
+.tool-content .cs-header-left {
  display: flex;
  align-items: center;
  gap: 12px;
  }
 
-.tool-content.logo-mark {
+.tool-content .logo-mark {
  width: 38px;
  height: 38px;
  background: var(--koest-color);
@@ -98,7 +98,7 @@
  flex-shrink: 0;
  }
 
-.tool-content.cs-header-text h2 {
+.tool-content .cs-header-text h2 {
  font-size: 1.375rem;
  font-weight: 800;
  color: var(--koest-color);
@@ -106,13 +106,13 @@
  margin: 0;
  }
 
-.tool-content.cs-header-text.subtitle {
+.tool-content .cs-header-text.subtitle {
  font-size: 13.5px;
  color: #6B7280;
  font-weight: 500;
  }
 
-.tool-content.cs-header-badge {
+.tool-content .cs-header-badge {
  background: #FF8C00;
  color: #fff;
  font-size: 12.5px;
@@ -125,22 +125,22 @@
  }
 
  /* ========== TWO-COLUMN GRID ========== */
-.tool-content.grid-2col {
+.tool-content .grid-2col {
  display: grid;
  grid-template-columns: 1fr 1fr;
  gap: 14px;
  }
 
-.tool-content.grid-2col.gap-sm {
+.tool-content .grid-2col.gap-sm {
  gap: 10px;
  }
 
-.tool-content.full-width {
+.tool-content .full-width {
  grid-column: 1 / -1;
  }
 
  /* ========== SECTION CARD ========== */
-.tool-content.section-card {
+.tool-content .section-card {
  border: 1px solid #E2E8F0;
  border-radius: 10px;
  overflow: hidden;
@@ -148,7 +148,7 @@
  flex-direction: column;
  }
 
-.tool-content.section-header {
+.tool-content .section-header {
  display: flex;
  align-items: center;
  gap: 6px;
@@ -159,12 +159,12 @@
  letter-spacing: 0.02em;
  }
 
-.tool-content.section-header.icon {
+.tool-content .section-header.icon {
  font-size: 1.0625rem;
  flex-shrink: 0;
  }
 
-.tool-content.section-header.section-num {
+.tool-content .section-header.section-num {
  background: rgba(255,255,255,0.25);
  padding: 1px 6px;
  border-radius: 3px;
@@ -173,7 +173,7 @@
  margin-right: 2px;
  }
 
-.tool-content.section-body {
+.tool-content .section-body {
  padding: 12px 14px 14px;
  flex: 1;
  font-size: 0.9375rem;
@@ -181,35 +181,35 @@
  }
 
  /* Section color variants */
-.tool-content.s-koest.section-header { background: var(--koest-color); }
-.tool-content.s-koest { border-color: var(--koest-border); }
+.tool-content .s-koest.section-header { background: var(--koest-color); }
+.tool-content .s-koest { border-color: var(--koest-border); }
 
-.tool-content.s-est.section-header { background: var(--est-color); }
-.tool-content.s-est { border-color: var(--est-border); }
+.tool-content .s-est.section-header { background: var(--est-color); }
+.tool-content .s-est { border-color: var(--est-border); }
 
-.tool-content.s-ust.section-header { background: var(--ust-color); color: #1C1D1F; }
-.tool-content.s-ust { border-color: var(--ust-border); }
+.tool-content .s-ust.section-header { background: var(--ust-color); color: #1C1D1F; }
+.tool-content .s-ust { border-color: var(--ust-border); }
 
-.tool-content.s-svs.section-header { background: var(--svs-color); }
-.tool-content.s-svs { border-color: var(--svs-border); }
+.tool-content .s-svs.section-header { background: var(--svs-color); }
+.tool-content .s-svs { border-color: var(--svs-border); }
 
-.tool-content.s-neufoeg.section-header { background: var(--neufoeg-color); }
-.tool-content.s-neufoeg { border-color: var(--neufoeg-border); }
+.tool-content .s-neufoeg.section-header { background: var(--neufoeg-color); }
+.tool-content .s-neufoeg { border-color: var(--neufoeg-border); }
 
-.tool-content.s-forschung.section-header { background: var(--forschung-color); }
-.tool-content.s-forschung { border-color: var(--forschung-border); }
+.tool-content .s-forschung.section-header { background: var(--forschung-color); }
+.tool-content .s-forschung { border-color: var(--forschung-border); }
 
-.tool-content.s-lohn.section-header { background: var(--lohn-color); color: #fff; }
-.tool-content.s-lohn { border-color: var(--lohn-border); }
+.tool-content .s-lohn.section-header { background: var(--lohn-color); color: #fff; }
+.tool-content .s-lohn { border-color: var(--lohn-border); }
 
-.tool-content.s-fristen.section-header { background: var(--fristen-color); }
-.tool-content.s-fristen { border-color: var(--fristen-border); }
+.tool-content .s-fristen.section-header { background: var(--fristen-color); }
+.tool-content .s-fristen { border-color: var(--fristen-border); }
 
-.tool-content.s-pauschal.section-header { background: var(--pauschal-color); }
-.tool-content.s-pauschal { border-color: var(--pauschal-border); }
+.tool-content .s-pauschal.section-header { background: var(--pauschal-color); }
+.tool-content .s-pauschal { border-color: var(--pauschal-border); }
 
  /* ========== RATE BOX ========== */
-.tool-content.rate-box {
+.tool-content .rate-box {
  display: inline-flex;
  align-items: center;
  gap: 6px;
@@ -220,21 +220,21 @@
  margin: 2px 0;
  }
 
-.tool-content.rate-big {
+.tool-content .rate-big {
  font-weight: 700;
  font-size: 1.375rem;
  color: var(--koest-color);
  font-variant-numeric: tabular-nums;
  }
 
-.tool-content.rate-label {
+.tool-content .rate-label {
  font-size: 0.8125rem;
  color: #6B7280;
  font-weight: 500;
  }
 
  /* ========== FORMULA BOX ========== */
-.tool-content.formula-box {
+.tool-content .formula-box {
  font-size: 13.5px;
  font-weight: 600;
  background: #F8FAFC;
@@ -249,24 +249,24 @@
  }
 
  /* ========== HIGHLIGHT BOXES ========== */
-.tool-content.highlight-box {
+.tool-content .highlight-box {
  border-radius: 6px;
  padding: 6px 10px;
  margin: 4px 0;
  font-size: 0.875rem;
  }
 
-.tool-content.highlight-orange {
+.tool-content .highlight-orange {
  background: var(--ust-bg);
  border-left: 3px solid var(--ust-color);
  }
 
-.tool-content.highlight-red {
+.tool-content .highlight-red {
  background: var(--forschung-bg);
  border-left: 3px solid var(--forschung-color);
  }
 
-.tool-content.highlight-teal {
+.tool-content .highlight-teal {
  background: var(--neufoeg-bg);
  border-left: 3px solid var(--neufoeg-color);
  }
@@ -297,35 +297,35 @@
  background: #6B7280;
  }
 
-.tool-content.s-koest ul.compact li::before { background: var(--koest-color); }
-.tool-content.s-est ul.compact li::before { background: var(--est-color); }
-.tool-content.s-ust ul.compact li::before { background: var(--ust-color); }
-.tool-content.s-svs ul.compact li::before { background: var(--svs-color); }
-.tool-content.s-neufoeg ul.compact li::before { background: var(--neufoeg-color); }
-.tool-content.s-forschung ul.compact li::before { background: var(--forschung-color); }
-.tool-content.s-lohn ul.compact li::before { background: var(--lohn-color); }
-.tool-content.s-fristen ul.compact li::before { background: var(--fristen-color); }
-.tool-content.s-pauschal ul.compact li::before { background: var(--pauschal-color); }
+.tool-content .s-koest ul.compact li::before { background: var(--koest-color); }
+.tool-content .s-est ul.compact li::before { background: var(--est-color); }
+.tool-content .s-ust ul.compact li::before { background: var(--ust-color); }
+.tool-content .s-svs ul.compact li::before { background: var(--svs-color); }
+.tool-content .s-neufoeg ul.compact li::before { background: var(--neufoeg-color); }
+.tool-content .s-forschung ul.compact li::before { background: var(--forschung-color); }
+.tool-content .s-lohn ul.compact li::before { background: var(--lohn-color); }
+.tool-content .s-fristen ul.compact li::before { background: var(--fristen-color); }
+.tool-content .s-pauschal ul.compact li::before { background: var(--pauschal-color); }
 
  /* ========== MONO TEXT ========== */
-.tool-content.mono {
+.tool-content .mono {
  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
  font-weight: 600;
  }
 
  /* ========== TEXT HELPERS ========== */
-.tool-content.text-muted-cs {
+.tool-content .text-muted-cs {
  color: #6B7280;
  font-size: 0.8125rem;
  }
 
-.tool-content.text-small {
+.tool-content .text-small {
  font-size: 12.5px;
  color: #6B7280;
  }
 
  /* ========== BADGES ========== */
-.tool-content.cs-badge {
+.tool-content .cs-badge {
  display: inline-block;
  font-size: 11.5px;
  font-weight: 600;
@@ -334,27 +334,27 @@
  white-space: nowrap;
  }
 
-.tool-content.cs-badge-green {
+.tool-content .cs-badge-green {
  background: #DCFCE7;
  color: #065F46;
  border: 1px solid #A7F3D0;
  }
 
-.tool-content.cs-badge-blue {
+.tool-content .cs-badge-blue {
  background: #FEF2F2;
  color: #374151;
  border: 1px solid #FEE2E2;
  }
 
  /* ========== TAX RATE TABLE ========== */
-.tool-content.tax-table {
+.tool-content .tax-table {
  width: 100%;
  border-collapse: collapse;
  font-size: 13.5px;
  margin: 4px 0;
  }
 
-.tool-content.tax-table th {
+.tool-content .tax-table th {
  background: #F8FAFC;
  font-weight: 600;
  padding: 4px 8px;
@@ -364,36 +364,36 @@
  color: #1C1D1F;
  }
 
-.tool-content.tax-table td {
+.tool-content .tax-table td {
  padding: 3px 8px;
  border-bottom: 1px solid #E2E8F0;
  font-size: 13.5px;
  }
 
-.tool-content.tax-table td:last-child {
+.tool-content .tax-table td:last-child {
  font-weight: 600;
  text-align: right;
  white-space: nowrap;
  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
  }
 
-.tool-content.tax-table tr:last-child td {
+.tool-content .tax-table tr:last-child td {
  border-bottom: none;
  }
 
-.tool-content.tax-table.row-highlight {
+.tool-content .tax-table.row-highlight {
  background: #FFF7ED;
  }
 
  /* ========== FRISTEN TABLE ========== */
-.tool-content.fristen-table {
+.tool-content .fristen-table {
  width: 100%;
  border-collapse: collapse;
  font-size: 13.5px;
  margin: 4px 0;
  }
 
-.tool-content.fristen-table thead th {
+.tool-content .fristen-table thead th {
  background: var(--fristen-color);
  color: #fff;
  font-weight: 600;
@@ -402,29 +402,29 @@
  font-size: 12.5px;
  }
 
-.tool-content.fristen-table td {
+.tool-content .fristen-table td {
  padding: 4px 8px;
  border-bottom: 1px solid #E2E8F0;
  font-size: 13.5px;
  line-height: 1.35;
  }
 
-.tool-content.fristen-table td:first-child {
+.tool-content .fristen-table td:first-child {
  font-weight: 600;
  color: var(--koest-color);
  white-space: nowrap;
  }
 
-.tool-content.fristen-table tr:nth-child(even) {
+.tool-content .fristen-table tr:nth-child(even) {
  background: #F8FAFC;
  }
 
-.tool-content.fristen-table tr:last-child td {
+.tool-content .fristen-table tr:last-child td {
  border-bottom: none;
  }
 
  /* ========== EXAMPLE BOX ========== */
-.tool-content.example-box {
+.tool-content .example-box {
  background: #FFF7ED;
  border: 1px solid #FED7AA;
  border-radius: 6px;
@@ -433,7 +433,7 @@
  font-size: 13.5px;
  }
 
-.tool-content.example-box.example-label {
+.tool-content .example-box.example-label {
  font-weight: 700;
  font-size: 12.5px;
  color: #92400E;
@@ -442,58 +442,58 @@
  }
 
  /* ========== TIP BOXES (3-column) ========== */
-.tool-content.tip-grid {
+.tool-content .tip-grid {
  display: grid;
  grid-template-columns: 1fr 1fr 1fr;
  gap: 10px;
  }
 
-.tool-content.tip-card {
+.tool-content .tip-card {
  border-radius: 8px;
  padding: 10px 12px;
  font-size: 0.8125rem;
  border: 1px solid;
  }
 
-.tool-content.tip-card-title {
+.tool-content .tip-card-title {
  font-weight: 700;
  font-size: 14.5px;
  margin-bottom: 4px;
  }
 
-.tool-content.tip-card-body {
+.tool-content .tip-card-body {
  line-height: 1.4;
  }
 
  /* ========== COMPARISON BOX ========== */
-.tool-content.comparison-box {
+.tool-content .comparison-box {
  background: #F8FAFC;
  border: 1px solid #E2E8F0;
  border-radius: 8px;
  padding: 10px 14px;
  }
 
-.tool-content.comparison-box.comparison-title {
+.tool-content .comparison-box.comparison-title {
  color: var(--koest-color);
  font-size: 0.9375rem;
  font-weight: 700;
  margin-bottom: 8px;
  }
 
-.tool-content.comparison-grid {
+.tool-content .comparison-grid {
  display: grid;
  grid-template-columns: 1fr 1fr;
  gap: 12px;
  }
 
-.tool-content.comparison-col-title {
+.tool-content .comparison-col-title {
  font-weight: 700;
  font-size: 0.8125rem;
  margin-bottom: 4px;
  }
 
  /* ========== CS FOOTER (print page footer) ========== */
-.tool-content.cs-footer {
+.tool-content .cs-footer {
  padding-top: 8px;
  border-top: 2px solid var(--koest-color);
  margin-top: 20px;
@@ -505,13 +505,13 @@
  gap: 8px;
  }
 
-.tool-content.cs-footer-left {
+.tool-content .cs-footer-left {
  display: flex;
  align-items: center;
  gap: 6px;
  }
 
-.tool-content.cs-footer-logo {
+.tool-content .cs-footer-logo {
  width: 18px;
  height: 18px;
  background: var(--koest-color);
@@ -525,7 +525,7 @@
  flex-shrink: 0;
  }
 
-.tool-content.cs-disclaimer {
+.tool-content .cs-disclaimer {
  font-style: italic;
  color: #DC3545;
  font-weight: 500;
@@ -533,22 +533,22 @@
 
  /* ========== RESPONSIVE ========== */
  @media (max-width: 768px) {
-.tool-content.grid-2col {
+.tool-content .grid-2col {
  grid-template-columns: 1fr;
  }
-.tool-content.tip-grid {
+.tool-content .tip-grid {
  grid-template-columns: 1fr;
  }
-.tool-content.comparison-grid {
+.tool-content .comparison-grid {
  grid-template-columns: 1fr;
  }
-.tool-content.cs-header {
+.tool-content .cs-header {
  flex-direction: column;
  align-items: flex-start;
  gap: 8px;
  }
-.tool-content.tax-table,
-.tool-content.fristen-table {
+.tool-content .tax-table,
+.tool-content .fristen-table {
  display: block;
  overflow-x: auto;
  -webkit-overflow-scrolling: touch;
@@ -557,36 +557,36 @@
 
  /* ========== PRINT ========== */
  @media print {
-.tool-content.page {
+.tool-content .page {
  width: 210mm;
  min-height: 277mm;
  padding: 12mm 14mm 10mm 14mm;
  margin: 0;
  page-break-after: always;
  }
-.tool-content.page:last-child {
+.tool-content .page:last-child {
  page-break-after: auto;
  }
-.tool-content.section-header,
-.tool-content.logo-mark,
-.tool-content.cs-footer-logo,
-.tool-content.cs-header-badge,
-.tool-content.rate-box,
-.tool-content.formula-box,
-.tool-content.highlight-box,
-.tool-content.highlight-orange,
-.tool-content.highlight-red,
-.tool-content.highlight-teal,
-.tool-content.cs-badge,
-.tool-content.tax-table th,
-.tool-content.fristen-table thead th,
-.tool-content.example-box,
-.tool-content.tip-card,
-.tool-content.comparison-box {
+.tool-content .section-header,
+.tool-content .logo-mark,
+.tool-content .cs-footer-logo,
+.tool-content .cs-header-badge,
+.tool-content .rate-box,
+.tool-content .formula-box,
+.tool-content .highlight-box,
+.tool-content .highlight-orange,
+.tool-content .highlight-red,
+.tool-content .highlight-teal,
+.tool-content .cs-badge,
+.tool-content .tax-table th,
+.tool-content .fristen-table thead th,
+.tool-content .example-box,
+.tool-content .tip-card,
+.tool-content .comparison-box {
  -webkit-print-color-adjust: exact!important;
  print-color-adjust: exact!important;
  }
-.tool-content.section-card {
+.tool-content .section-card {
  break-inside: avoid;
  }
  }

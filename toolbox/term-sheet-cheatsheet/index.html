@@ -28,7 +28,7 @@
  <link rel="stylesheet" href="/css/toolbox-tools.css"/>
  <style>
  /* Page-specific styles for Term Sheet Cheat Sheet */
-.tool-content.ts-legend {
+.tool-content .ts-legend {
  display: flex;
  gap: 16px;
  margin-bottom: 12px;
@@ -40,27 +40,27 @@
  align-items: center;
  flex-wrap: wrap;
  }
-.tool-content.ts-legend-label {
+.tool-content .ts-legend-label {
  font-weight: 700;
  color: #E63946;
  }
-.tool-content.ts-legend-item {
+.tool-content .ts-legend-item {
  display: flex;
  align-items: center;
  gap: 6px;
  }
-.tool-content.ts-legend-dot {
+.tool-content .ts-legend-dot {
  width: 12px;
  height: 12px;
  border-radius: 50%;
  flex-shrink: 0;
  }
-.tool-content.ts-legend-dot.critical { background: #DC3545; }
-.tool-content.ts-legend-dot.important { background: #FF8C00; }
-.tool-content.ts-legend-dot.nice { background: #28A745; }
+.tool-content .ts-legend-dot.critical { background: #DC3545; }
+.tool-content .ts-legend-dot.important { background: #FF8C00; }
+.tool-content .ts-legend-dot.nice { background: #28A745; }
 
  /* Page Header (within tool content) */
-.tool-content.ts-page-header {
+.tool-content .ts-page-header {
  display: flex;
  justify-content: space-between;
  align-items: center;
@@ -68,12 +68,12 @@
  border-bottom: 3px solid #E63946;
  margin-bottom: 12px;
  }
-.tool-content.ts-page-header-left {
+.tool-content .ts-page-header-left {
  display: flex;
  align-items: center;
  gap: 10px;
  }
-.tool-content.ts-logo-mark {
+.tool-content .ts-logo-mark {
  width: 34px;
  height: 34px;
  background: #E63946;
@@ -87,7 +87,7 @@
  letter-spacing: -0.5px;
  flex-shrink: 0;
  }
-.tool-content.ts-page-title {
+.tool-content .ts-page-title {
  font-size: 1.25rem;
  font-weight: 800;
  color: #E63946;
@@ -95,12 +95,12 @@
  letter-spacing: -0.3px;
  margin: 0;
  }
-.tool-content.ts-page-subtitle {
+.tool-content .ts-page-subtitle {
  font-size: 0.8125rem;
  color: #6B7280;
  font-weight: 500;
  }
-.tool-content.ts-page-badge {
+.tool-content .ts-page-badge {
  background: #FF8C00;
  color: #fff;
  font-size: 0.6875rem;
@@ -113,13 +113,13 @@
  }
 
  /* Cards Grid */
-.tool-content.ts-cards-grid {
+.tool-content .ts-cards-grid {
  display: grid;
  grid-template-columns: repeat(3, 1fr);
  gap: 10px;
  margin-bottom: 20px;
  }
-.tool-content.ts-clause-card {
+.tool-content .ts-clause-card {
  background: #fff;
  border: 1px solid #E2E8F0;
  border-radius: 8px;
@@ -128,7 +128,7 @@
  flex-direction: column;
  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
  }
-.tool-content.ts-card-header {
+.tool-content .ts-card-header {
  padding: 8px 12px;
  display: flex;
  align-items: center;
@@ -138,16 +138,16 @@
  font-size: 0.8125rem;
  letter-spacing: -0.2px;
  }
-.tool-content.ts-card-header.ts-card-icon {
+.tool-content .ts-card-header.ts-card-icon {
  font-size: 1rem;
  flex-shrink: 0;
  line-height: 1;
  font-weight: 800;
  }
-.tool-content.ts-card-header.ts-card-title {
+.tool-content .ts-card-header.ts-card-title {
  line-height: 1.2;
  }
-.tool-content.ts-card-header.ts-card-en {
+.tool-content .ts-card-header.ts-card-en {
  font-size: 0.625rem;
  font-weight: 500;
  opacity: 0.85;
@@ -155,12 +155,12 @@
  white-space: nowrap;
  }
  /* Importance-based header colors */
-.tool-content.ts-card-critical.ts-card-header { background: #DC3545; }
-.tool-content.ts-card-important.ts-card-header { background: #FF8C00; color: #1C1D1F; }
-.tool-content.ts-card-important.ts-card-header.ts-card-en { opacity: 0.65; }
-.tool-content.ts-card-nice.ts-card-header { background: #28A745; }
+.tool-content .ts-card-critical.ts-card-header { background: #DC3545; }
+.tool-content .ts-card-important.ts-card-header { background: #FF8C00; color: #1C1D1F; }
+.tool-content .ts-card-important.ts-card-header.ts-card-en { opacity: 0.65; }
+.tool-content .ts-card-nice.ts-card-header { background: #28A745; }
 
-.tool-content.ts-card-body {
+.tool-content .ts-card-body {
  padding: 10px 12px;
  flex: 1;
  display: flex;
@@ -168,16 +168,16 @@
  gap: 6px;
  font-size: 0.875rem;
  }
-.tool-content.ts-card-body p {
+.tool-content .ts-card-body p {
  line-height: 1.45;
  margin-bottom: 0;
  }
-.tool-content.ts-card-body.ts-definition {
+.tool-content .ts-card-body.ts-definition {
  color: #6B7280;
  font-size: 0.8125rem;
  line-height: 1.4;
  }
-.tool-content.ts-card-body.ts-formula {
+.tool-content .ts-card-body.ts-formula {
  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
  font-size: 0.75rem;
  background: #F8FAFC;
@@ -188,46 +188,46 @@
  font-weight: 500;
  line-height: 1.4;
  }
-.tool-content.ts-card-body.ts-tip {
+.tool-content .ts-card-body.ts-tip {
  font-size: 12.5px;
  line-height: 1.4;
  padding: 6px 10px;
  border-radius: 4px;
  margin-top: auto;
  }
-.tool-content.ts-card-critical.ts-tip {
+.tool-content .ts-card-critical.ts-tip {
  background: #FEF2F2;
  border-left: 3px solid #DC3545;
  color: #991B1B;
  }
-.tool-content.ts-card-important.ts-tip {
+.tool-content .ts-card-important.ts-tip {
  background: #FFF7ED;
  border-left: 3px solid #FF8C00;
  color: #92400E;
  }
-.tool-content.ts-card-nice.ts-tip {
+.tool-content .ts-card-nice.ts-tip {
  background: #DCFCE7;
  border-left: 3px solid #28A745;
  color: #166534;
  }
-.tool-content.ts-card-body.ts-typical {
+.tool-content .ts-card-body.ts-typical {
  font-size: 0.75rem;
  color: #6B7280;
  display: flex;
  align-items: baseline;
  gap: 4px;
  }
-.tool-content.ts-typical-label {
+.tool-content .ts-typical-label {
  font-weight: 600;
  color: #E63946;
  white-space: nowrap;
  }
-.tool-content.ts-card-body strong {
+.tool-content .ts-card-body strong {
  color: #E63946;
  }
 
  /* Page Footer (print) */
-.tool-content.ts-page-footer {
+.tool-content .ts-page-footer {
  margin-top: 10px;
  padding-top: 8px;
  border-top: 2px solid #E63946;
@@ -237,12 +237,12 @@
  color: #6B7280;
  align-items: center;
  }
-.tool-content.ts-footer-disclaimer {
+.tool-content .ts-footer-disclaimer {
  font-style: italic;
  }
 
  /* Page separator for screen */
-.tool-content.ts-page-divider {
+.tool-content .ts-page-divider {
  border: none;
  border-top: 2px dashed #E2E8F0;
  margin: 40px 0;
@@ -250,38 +250,38 @@
 
  /* Responsive */
  @media (max-width: 991px) {
-.tool-content.ts-cards-grid {
+.tool-content .ts-cards-grid {
  grid-template-columns: repeat(2, 1fr);
  }
  }
  @media (max-width: 640px) {
-.tool-content.ts-cards-grid {
+.tool-content .ts-cards-grid {
  grid-template-columns: 1fr;
  }
-.tool-content.ts-page-header {
+.tool-content .ts-page-header {
  flex-direction: column;
  align-items: flex-start;
  gap: 8px;
  }
-.tool-content.ts-legend {
+.tool-content .ts-legend {
  flex-wrap: wrap;
  gap: 8px;
  }
  }
  /* Print */
  @media print {
-.tool-content.ts-clause-card { break-inside: avoid; }
-.tool-content.ts-page-divider { display: none; }
-.tool-content.ts-cards-grid {
+.tool-content .ts-clause-card { break-inside: avoid; }
+.tool-content .ts-page-divider { display: none; }
+.tool-content .ts-cards-grid {
  grid-template-columns: repeat(3, 1fr);
  gap: 6px;
  }
-.tool-content.ts-card-header,
-.tool-content.ts-tip,
-.tool-content.ts-legend,
-.tool-content.ts-logo-mark,
-.tool-content.ts-page-badge,
-.tool-content.ts-formula {
+.tool-content .ts-card-header,
+.tool-content .ts-tip,
+.tool-content .ts-legend,
+.tool-content .ts-logo-mark,
+.tool-content .ts-page-badge,
+.tool-content .ts-formula {
  -webkit-print-color-adjust: exact;
  print-color-adjust: exact;
  }

@@ -53,7 +53,7 @@
  }
 
  /* --- Page 1: Sheet Header --- */
-.tool-content.sheet-header {
+.tool-content .sheet-header {
  display: flex;
  justify-content: space-between;
  align-items: center;
@@ -61,12 +61,12 @@
  border-bottom: 3px solid var(--fc-primary);
  margin-bottom: 16px;
  }
-.tool-content.sheet-header-left {
+.tool-content .sheet-header-left {
  display: flex;
  align-items: center;
  gap: 12px;
  }
-.tool-content.sheet-logo-mark {
+.tool-content .sheet-logo-mark {
  width: 38px;
  height: 38px;
  background: var(--fc-primary);
@@ -80,19 +80,19 @@
  letter-spacing: -0.5px;
  flex-shrink: 0;
  }
-.tool-content.sheet-header h2 {
+.tool-content .sheet-header h2 {
  font-size: 1.375rem;
  font-weight: 700;
  color: var(--fc-primary);
  line-height: 1.15;
  margin: 0;
  }
-.tool-content.sheet-header.sheet-subtitle {
+.tool-content .sheet-header.sheet-subtitle {
  font-size: 0.9375rem;
  color: var(--fc-text-light);
  font-weight: 500;
  }
-.tool-content.sheet-badge {
+.tool-content .sheet-badge {
  background: var(--fc-accent);
  color: #fff;
  font-size: 0.8125rem;
@@ -105,41 +105,41 @@
  }
 
  /* --- Phase Timeline --- */
-.tool-content.phase-timeline {
+.tool-content .phase-timeline {
  display: grid;
  grid-template-columns: repeat(4, 1fr);
  gap: 6px;
  margin-bottom: 12px;
  }
-.tool-content.phase-tl-header {
+.tool-content .phase-tl-header {
  text-align: center;
  padding: 8px 4px;
  border-radius: 8px 8px 0 0;
  color: #fff;
  }
-.tool-content.phase-tl-header.phase-icon { font-size: 1.3125rem; margin-bottom: 2px; }
-.tool-content.phase-tl-header h3 { font-size: 0.9375rem; font-weight: 700; color: white; margin: 0 0 1px; }
-.tool-content.phase-tl-header.phase-sub { font-size: 0.8125rem; color: rgba(255,255,255,0.85); font-weight: 500; }
-.tool-content.ptl-idee { background: var(--fc-phase-idee); }
-.tool-content.ptl-prototyp { background: var(--fc-phase-prototyp); }
-.tool-content.ptl-markt { background: var(--fc-phase-markt); }
-.tool-content.ptl-scale { background: var(--fc-phase-scale); }
+.tool-content .phase-tl-header.phase-icon { font-size: 1.3125rem; margin-bottom: 2px; }
+.tool-content .phase-tl-header h3 { font-size: 0.9375rem; font-weight: 700; color: white; margin: 0 0 1px; }
+.tool-content .phase-tl-header.phase-sub { font-size: 0.8125rem; color: rgba(255,255,255,0.85); font-weight: 500; }
+.tool-content .ptl-idee { background: var(--fc-phase-idee); }
+.tool-content .ptl-prototyp { background: var(--fc-phase-prototyp); }
+.tool-content .ptl-markt { background: var(--fc-phase-markt); }
+.tool-content .ptl-scale { background: var(--fc-phase-scale); }
 
  /* Arrow connectors */
-.tool-content.phase-arrows {
+.tool-content .phase-arrows {
  display: grid;
  grid-template-columns: repeat(4, 1fr);
  gap: 6px;
  margin-bottom: 8px;
  height: 12px;
  }
-.tool-content.phase-arrow {
+.tool-content .phase-arrow {
  display: flex;
  align-items: center;
  justify-content: center;
  position: relative;
  }
-.tool-content.phase-arrow::after {
+.tool-content .phase-arrow::after {
  content: '';
  position: absolute;
  right: -9px;
@@ -149,18 +149,18 @@
  border-top: 6px solid transparent;
  border-bottom: 6px solid transparent;
  }
-.tool-content.phase-arrow:last-child::after { display: none; }
-.tool-content.phase-arrow.arrow-line { width: 100%; height: 3px; border-radius: 2px; }
-.tool-content.phase-arrow:nth-child(1).arrow-line { background: var(--fc-phase-idee); }
-.tool-content.phase-arrow:nth-child(1)::after { border-left-color: var(--fc-phase-idee); }
-.tool-content.phase-arrow:nth-child(2).arrow-line { background: var(--fc-phase-prototyp); }
-.tool-content.phase-arrow:nth-child(2)::after { border-left-color: var(--fc-phase-prototyp); }
-.tool-content.phase-arrow:nth-child(3).arrow-line { background: var(--fc-phase-markt); }
-.tool-content.phase-arrow:nth-child(3)::after { border-left-color: var(--fc-phase-markt); }
-.tool-content.phase-arrow:nth-child(4).arrow-line { background: var(--fc-phase-scale); }
+.tool-content .phase-arrow:last-child::after { display: none; }
+.tool-content .phase-arrow.arrow-line { width: 100%; height: 3px; border-radius: 2px; }
+.tool-content .phase-arrow:nth-child(1).arrow-line { background: var(--fc-phase-idee); }
+.tool-content .phase-arrow:nth-child(1)::after { border-left-color: var(--fc-phase-idee); }
+.tool-content .phase-arrow:nth-child(2).arrow-line { background: var(--fc-phase-prototyp); }
+.tool-content .phase-arrow:nth-child(2)::after { border-left-color: var(--fc-phase-prototyp); }
+.tool-content .phase-arrow:nth-child(3).arrow-line { background: var(--fc-phase-markt); }
+.tool-content .phase-arrow:nth-child(3)::after { border-left-color: var(--fc-phase-markt); }
+.tool-content .phase-arrow:nth-child(4).arrow-line { background: var(--fc-phase-scale); }
 
  /* --- Matrix Grid --- */
-.tool-content.matrix {
+.tool-content .matrix {
  display: grid;
  grid-template-columns: 100px repeat(4, 1fr);
  gap: 0;
@@ -170,7 +170,7 @@
  font-size: 0.8125rem;
  margin-bottom: 16px;
  }
-.tool-content.matrix-header {
+.tool-content .matrix-header {
  background: var(--fc-primary);
  color: white;
  font-weight: 600;
@@ -182,8 +182,8 @@
  text-align: center;
  border-right: 1px solid rgba(255,255,255,0.15);
  }
-.tool-content.matrix-header:last-child { border-right: none; }
-.tool-content.matrix-row-label {
+.tool-content .matrix-header:last-child { border-right: none; }
+.tool-content .matrix-row-label {
  background: var(--fc-bg-light);
  padding: 5px 6px;
  font-weight: 600;
@@ -195,7 +195,7 @@
  border-bottom: 1px solid var(--fc-border);
  line-height: 1.25;
  }
-.tool-content.matrix-cell {
+.tool-content .matrix-cell {
  padding: 4px;
  border-right: 1px solid var(--fc-border);
  border-bottom: 1px solid var(--fc-border);
@@ -203,8 +203,8 @@
  flex-direction: column;
  gap: 3px;
  }
-.tool-content.matrix-cell:last-child { border-right: none; }
-.tool-content.cell-empty {
+.tool-content .matrix-cell:last-child { border-right: none; }
+.tool-content .cell-empty {
  display: flex;
  align-items: center;
  justify-content: center;
@@ -213,30 +213,30 @@
  }
 
  /* --- Fund Cards in Matrix --- */
-.tool-content.fund-card {
+.tool-content .fund-card {
  padding: 3px 5px;
  border-radius: 4px;
  font-size: 11.5px;
  line-height: 1.25;
  border-left: 3px solid;
  }
-.tool-content.fund-card.fund-name { font-weight: 600; display: block; margin-bottom: 1px; }
-.tool-content.fund-card.fund-amount { font-weight: 700; font-size: 0.8125rem; }
-.tool-content.fund-card.fund-type { font-size: 10.5px; color: var(--fc-text-light); }
-.tool-content.fund-card.card-idee { background: var(--fc-phase-idee-bg); border-left-color: var(--fc-phase-idee); }
-.tool-content.fund-card.card-prototyp { background: var(--fc-phase-prototyp-bg); border-left-color: var(--fc-phase-prototyp); }
-.tool-content.fund-card.card-markt { background: var(--fc-phase-markt-bg); border-left-color: var(--fc-phase-markt); }
-.tool-content.fund-card.card-scale { background: var(--fc-phase-scale-bg); border-left-color: var(--fc-phase-scale); }
-.tool-content.fund-card.card-span { background: #F3F4F6; border-left-color: #6B7280; }
+.tool-content .fund-card.fund-name { font-weight: 600; display: block; margin-bottom: 1px; }
+.tool-content .fund-card.fund-amount { font-weight: 700; font-size: 0.8125rem; }
+.tool-content .fund-card.fund-type { font-size: 10.5px; color: var(--fc-text-light); }
+.tool-content .fund-card.card-idee { background: var(--fc-phase-idee-bg); border-left-color: var(--fc-phase-idee); }
+.tool-content .fund-card.card-prototyp { background: var(--fc-phase-prototyp-bg); border-left-color: var(--fc-phase-prototyp); }
+.tool-content .fund-card.card-markt { background: var(--fc-phase-markt-bg); border-left-color: var(--fc-phase-markt); }
+.tool-content .fund-card.card-scale { background: var(--fc-phase-scale-bg); border-left-color: var(--fc-phase-scale); }
+.tool-content .fund-card.card-span { background: #F3F4F6; border-left-color: #6B7280; }
 
  /* --- Quick Tips Bar --- */
-.tool-content.tips-bar {
+.tool-content .tips-bar {
  display: grid;
  grid-template-columns: repeat(3, 1fr);
  gap: 10px;
  margin-bottom: 16px;
  }
-.tool-content.tip-card {
+.tool-content .tip-card {
  background: var(--fc-bg-light);
  border: 1px solid var(--fc-border);
  border-radius: 8px;
@@ -244,7 +244,7 @@
  font-size: 0.8125rem;
  line-height: 1.4;
  }
-.tool-content.tip-card strong {
+.tool-content .tip-card strong {
  color: var(--fc-primary);
  display: block;
  font-size: 0.8125rem;
@@ -252,7 +252,7 @@
  }
 
  /* --- Sheet Footer (inside print pages) --- */
-.tool-content.sheet-footer {
+.tool-content .sheet-footer {
  padding-top: 8px;
  border-top: 2px solid var(--fc-primary);
  display: flex;
@@ -261,12 +261,12 @@
  font-size: 0.6875rem;
  color: var(--fc-text-light);
  }
-.tool-content.sheet-footer-left {
+.tool-content .sheet-footer-left {
  display: flex;
  align-items: center;
  gap: 6px;
  }
-.tool-content.sheet-footer-logo {
+.tool-content .sheet-footer-logo {
  width: 18px;
  height: 18px;
  background: var(--fc-primary);
@@ -280,7 +280,7 @@
  }
 
  /* --- Page 2: Section Titles & Detail Tables --- */
-.tool-content.page2-header {
+.tool-content .page2-header {
  display: flex;
  justify-content: space-between;
  align-items: center;
@@ -288,14 +288,14 @@
  border-bottom: 3px solid var(--fc-primary);
  margin-bottom: 12px;
  }
-.tool-content.page2-header h2 {
+.tool-content .page2-header h2 {
  font-size: 1.3125rem;
  font-weight: 700;
  color: var(--fc-primary);
  margin: 0;
  }
-.tool-content.section-group { margin-bottom: 10px; }
-.tool-content.section-title-bar {
+.tool-content .section-group { margin-bottom: 10px; }
+.tool-content .section-title-bar {
  font-size: 0.9375rem;
  font-weight: 700;
  color: var(--fc-primary);
@@ -305,13 +305,13 @@
  border-left: 4px solid var(--fc-primary);
  border-radius: 0 4px 4px 0;
  }
-.tool-content.detail-table {
+.tool-content .detail-table {
  width: 100%;
  border-collapse: collapse;
  font-size: 0.8125rem;
  margin-bottom: 10px;
  }
-.tool-content.detail-table thead th {
+.tool-content .detail-table thead th {
  background: var(--fc-primary);
  color: white;
  font-weight: 600;
@@ -320,26 +320,26 @@
  font-size: 0.6875rem;
  white-space: nowrap;
  }
-.tool-content.detail-table thead th:first-child { border-radius: 4px 0 0 0; }
-.tool-content.detail-table thead th:last-child { border-radius: 0 4px 0 0; }
-.tool-content.detail-table tbody td {
+.tool-content .detail-table thead th:first-child { border-radius: 4px 0 0 0; }
+.tool-content .detail-table thead th:last-child { border-radius: 0 4px 0 0; }
+.tool-content .detail-table tbody td {
  padding: 4px 6px;
  border-bottom: 1px solid var(--fc-border);
  vertical-align: top;
  font-size: 0.75rem;
  line-height: 1.35;
  }
-.tool-content.detail-table tbody tr:nth-child(even) { background: var(--fc-bg-light); }
-.tool-content.detail-table tbody tr:last-child td { border-bottom: none; }
-.tool-content.detail-table.col-programm { width: 18%; font-weight: 600; }
-.tool-content.detail-table.col-phase { width: 11%; }
-.tool-content.detail-table.col-betrag { width: 14%; font-weight: 600; }
-.tool-content.detail-table.col-art { width: 12%; }
-.tool-content.detail-table.col-voraussetzungen { width: 23%; }
-.tool-content.detail-table.col-link { width: 12%; }
+.tool-content .detail-table tbody tr:nth-child(even) { background: var(--fc-bg-light); }
+.tool-content .detail-table tbody tr:last-child td { border-bottom: none; }
+.tool-content .detail-table.col-programm { width: 18%; font-weight: 600; }
+.tool-content .detail-table.col-phase { width: 11%; }
+.tool-content .detail-table.col-betrag { width: 14%; font-weight: 600; }
+.tool-content .detail-table.col-art { width: 12%; }
+.tool-content .detail-table.col-voraussetzungen { width: 23%; }
+.tool-content .detail-table.col-link { width: 12%; }
 
  /* Phase badges in detail tables */
-.tool-content.phase-badge {
+.tool-content .phase-badge {
  display: inline-block;
  padding: 1px 5px;
  border-radius: 3px;
@@ -348,32 +348,32 @@
  color: white;
  white-space: nowrap;
  }
-.tool-content.badge-idee { background: var(--fc-phase-idee); }
-.tool-content.badge-prototyp { background: var(--fc-phase-prototyp); }
-.tool-content.badge-markt { background: var(--fc-phase-markt); }
-.tool-content.badge-scale { background: var(--fc-phase-scale); }
-.tool-content.badge-all { background: #6B7280; }
-.tool-content.link-text {
+.tool-content .badge-idee { background: var(--fc-phase-idee); }
+.tool-content .badge-prototyp { background: var(--fc-phase-prototyp); }
+.tool-content .badge-markt { background: var(--fc-phase-markt); }
+.tool-content .badge-scale { background: var(--fc-phase-scale); }
+.tool-content .badge-all { background: #6B7280; }
+.tool-content .link-text {
  color: var(--fc-accent);
  font-size: 0.6875rem;
  word-break: break-all;
  }
 
  /* Legend row */
-.tool-content.legend {
+.tool-content .legend {
  display: flex;
  gap: 14px;
  margin-bottom: 10px;
  flex-wrap: wrap;
  }
-.tool-content.legend-item {
+.tool-content .legend-item {
  display: flex;
  align-items: center;
  gap: 4px;
  font-size: 0.75rem;
  color: var(--fc-text-dark);
  }
-.tool-content.legend-dot {
+.tool-content .legend-dot {
  width: 10px;
  height: 10px;
  border-radius: 2px;
@@ -382,36 +382,36 @@
 
  /* --- Responsive --- */
  @media (max-width: 768px) {
-.tool-content.phase-timeline { grid-template-columns: repeat(2, 1fr); }
-.tool-content.phase-arrows { grid-template-columns: repeat(2, 1fr); }
-.tool-content.matrix {
+.tool-content .phase-timeline { grid-template-columns: repeat(2, 1fr); }
+.tool-content .phase-arrows { grid-template-columns: repeat(2, 1fr); }
+.tool-content .matrix {
  display: block;
  overflow-x: auto;
  -webkit-overflow-scrolling: touch;
  }
-.tool-content.tips-bar { grid-template-columns: 1fr; }
-.tool-content.sheet-header { flex-direction: column; align-items: flex-start; gap: 8px; }
-.tool-content.page2-header { flex-direction: column; align-items: flex-start; gap: 8px; }
-.tool-content.legend { gap: 8px; }
-.tool-content.detail-table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.tool-content .tips-bar { grid-template-columns: 1fr; }
+.tool-content .sheet-header { flex-direction: column; align-items: flex-start; gap: 8px; }
+.tool-content .page2-header { flex-direction: column; align-items: flex-start; gap: 8px; }
+.tool-content .legend { gap: 8px; }
+.tool-content .detail-table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }
  }
 
  /* --- Print Styles --- */
  @media print {
-.tool-content.tb-print-page {
+.tool-content .tb-print-page {
  padding: 14mm 18mm 12mm 18mm;
  }
-.tool-content.fund-card,
-.tool-content.phase-tl-header,
-.tool-content.matrix-header,
-.tool-content.matrix-row-label,
-.tool-content.phase-badge,
-.tool-content.detail-table thead th,
-.tool-content.tip-card,
-.tool-content.section-title-bar,
-.tool-content.sheet-badge,
-.tool-content.sheet-logo-mark,
-.tool-content.sheet-footer-logo {
+.tool-content .fund-card,
+.tool-content .phase-tl-header,
+.tool-content .matrix-header,
+.tool-content .matrix-row-label,
+.tool-content .phase-badge,
+.tool-content .detail-table thead th,
+.tool-content .tip-card,
+.tool-content .section-title-bar,
+.tool-content .sheet-badge,
+.tool-content .sheet-logo-mark,
+.tool-content .sheet-footer-logo {
  -webkit-print-color-adjust: exact!important;
  print-color-adjust: exact!important;
  }

@@ -28,39 +28,39 @@
  <link rel="stylesheet" href="/css/toolbox-tools.css"/>
  <style>
  /* Page-specific styles for Board Meeting Deck */
-.tool-content.slide-grid {
+.tool-content .slide-grid {
  display: grid;
  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
  gap: 16px;
  margin: 24px 0;
  }
-.tool-content.slide-item {
+.tool-content .slide-item {
  background: #fff;
  border: 1px solid #E2E8F0;
  border-radius: 10px;
  padding: 20px;
  transition: box-shadow 0.2s;
  }
-.tool-content.slide-item:hover {
+.tool-content .slide-item:hover {
  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
  }
-.tool-content.slide-item strong {
+.tool-content .slide-item strong {
  display: block;
  color: #E63946;
  margin-bottom: 6px;
  font-size: 0.875rem;
  }
-.tool-content.slide-item span {
+.tool-content .slide-item span {
  color: #6B7280;
  font-size: 0.8125rem;
  line-height: 1.5;
  }
-.tool-content.quality-list {
+.tool-content .quality-list {
  list-style: none;
  padding: 0;
  margin: 20px 0;
  }
-.tool-content.quality-list li {
+.tool-content .quality-list li {
  padding: 12px 0 12px 32px;
  position: relative;
  color: #1C1D1F;
@@ -68,10 +68,10 @@
  border-bottom: 1px solid #E2E8F0;
  line-height: 1.6;
  }
-.tool-content.quality-list li:last-child {
+.tool-content .quality-list li:last-child {
  border-bottom: none;
  }
-.tool-content.quality-list li::before {
+.tool-content .quality-list li::before {
  content: '\2713';
  position: absolute;
  left: 0;
@@ -80,7 +80,7 @@
  font-weight: 700;
  font-size: 0.9375rem;
  }
-.tool-content.coming-soon-box {
+.tool-content .coming-soon-box {
  background: #fff;
  border: 2px dashed #E2E8F0;
  border-radius: 12px;
@@ -88,13 +88,13 @@
  text-align: center;
  margin: 32px 0;
  }
-.tool-content.coming-soon-box h3 {
+.tool-content .coming-soon-box h3 {
  font-size: 1.125rem;
  font-weight: 700;
  color: #E63946;
  margin-bottom: 12px;
  }
-.tool-content.coming-soon-box p {
+.tool-content .coming-soon-box p {
  color: #6B7280;
  font-size: 0.9375rem;
  margin-bottom: 20px;
@@ -104,13 +104,13 @@
  }
  /* Responsive */
  @media (max-width: 768px) {
-.tool-content.slide-grid {
+.tool-content .slide-grid {
  grid-template-columns: 1fr;
  }
  }
  /* Print */
  @media print {
-.tool-content.slide-item {
+.tool-content .slide-item {
  break-inside: avoid;
  -webkit-print-color-adjust: exact;
  print-color-adjust: exact;

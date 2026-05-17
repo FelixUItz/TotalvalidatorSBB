@@ -28,20 +28,20 @@
  <link rel="stylesheet" href="/css/toolbox-tools.css"/>
  <style>
  /* Page-specific styles for Metrics Cheat Sheet */
-.tool-content.grid {
+.tool-content .grid {
  display: grid;
  grid-template-columns: 1fr 1fr;
  gap: 16px;
  margin: 24px 0;
  }
-.tool-content.quadrant {
+.tool-content .quadrant {
  background: #fff;
  border-radius: 12px;
  overflow: hidden;
  border: 1px solid #E2E8F0;
  box-shadow: 0 1px 3px rgba(0,0,0,0.04), 0 1px 2px rgba(0,0,0,0.06);
  }
-.tool-content.quadrant-header {
+.tool-content .quadrant-header {
  padding: 10px 16px;
  display: flex;
  align-items: center;
@@ -52,25 +52,25 @@
  letter-spacing: 0.5px;
  text-transform: uppercase;
  }
-.tool-content.quadrant-header.icon {
+.tool-content .quadrant-header.icon {
  font-size: 1rem;
  flex-shrink: 0;
  }
-.tool-content.q-blue.quadrant-header { background: #FF8C00; }
-.tool-content.q-green.quadrant-header { background: #28A745; }
-.tool-content.q-orange.quadrant-header { background: #FF8C00; color: #1C1D1F; }
-.tool-content.q-red.quadrant-header { background: #DC3545; }
-.tool-content.quadrant-body {
+.tool-content .q-blue.quadrant-header { background: #FF8C00; }
+.tool-content .q-green.quadrant-header { background: #28A745; }
+.tool-content .q-orange.quadrant-header { background: #FF8C00; color: #1C1D1F; }
+.tool-content .q-red.quadrant-header { background: #DC3545; }
+.tool-content .quadrant-body {
  padding: 12px 16px 14px;
  }
  /* Metric Item */
-.tool-content.metric {
+.tool-content .metric {
  padding: 8px 0;
  }
-.tool-content.metric +.metric {
+.tool-content .metric +.metric {
  border-top: 1px solid #E2E8F0;
  }
-.tool-content.metric-name {
+.tool-content .metric-name {
  font-weight: 700;
  font-size: 0.8125rem;
  color: #1C1D1F;
@@ -80,19 +80,19 @@
  gap: 6px;
  flex-wrap: wrap;
  }
-.tool-content.metric-name.de-name {
+.tool-content .metric-name.de-name {
  font-weight: 500;
  font-size: 11.5px;
  color: #6B7280;
  }
-.tool-content.formula-row {
+.tool-content .formula-row {
  display: flex;
  align-items: baseline;
  gap: 6px;
  margin: 3px 0;
  flex-wrap: wrap;
  }
-.tool-content.formula-label {
+.tool-content .formula-label {
  font-size: 10.5px;
  font-weight: 600;
  color: #6B7280;
@@ -100,7 +100,7 @@
  letter-spacing: 0.3px;
  flex-shrink: 0;
  }
-.tool-content.formula {
+.tool-content .formula {
  font-family: 'SFMono-Regular', 'Consolas', 'Liberation Mono', 'Menlo', monospace;
  font-size: 11.5px;
  font-weight: 500;
@@ -112,14 +112,14 @@
  white-space: nowrap;
  line-height: 1.6;
  }
-.tool-content.benchmark {
+.tool-content .benchmark {
  display: inline-flex;
  align-items: center;
  gap: 4px;
  margin-top: 3px;
  flex-wrap: wrap;
  }
-.tool-content.badge {
+.tool-content .badge {
  font-size: 0.625rem;
  font-weight: 600;
  padding: 2px 7px;
@@ -127,38 +127,38 @@
  white-space: nowrap;
  line-height: 1.5;
  }
-.tool-content.badge-green {
+.tool-content .badge-green {
  background: #DCFCE7;
  color: #065F46;
  border: 1px solid #A7F3D0;
  }
-.tool-content.badge-red {
+.tool-content .badge-red {
  background: #FEF2F2;
  color: #991B1B;
  border: 1px solid #FECACA;
  }
-.tool-content.badge-blue {
+.tool-content .badge-blue {
  background: #FEF2F2;
  color: #374151;
  border: 1px solid #FEE2E2;
  }
-.tool-content.badge-orange {
+.tool-content .badge-orange {
  background: #FFF7ED;
  color: #92400E;
  border: 1px solid #FED7AA;
  }
-.tool-content.badge-gray {
+.tool-content .badge-gray {
  background: #F8FAFC;
  color: #4B5563;
  border: 1px solid #E5E7EB;
  }
  /* Responsive */
  @media (max-width: 768px) {
-.tool-content.grid {
+.tool-content .grid {
  grid-template-columns: 1fr;
  gap: 14px;
  }
-.tool-content.formula {
+.tool-content .formula {
  font-size: 0.6875rem;
  white-space: normal;
  word-break: break-all;
@@ -170,57 +170,57 @@
  size: A4 portrait;
  margin: 10mm 10mm 8mm 10mm;
  }
-.tool-content.grid {
+.tool-content .grid {
  gap: 8px;
  }
-.tool-content.quadrant {
+.tool-content .quadrant {
  border-radius: 6px;
  box-shadow: none;
  break-inside: avoid;
  }
-.tool-content.quadrant-header {
+.tool-content .quadrant-header {
  padding: 5px 10px;
  font-size: 9.5px;
  letter-spacing: 0.4px;
  -webkit-print-color-adjust: exact;
  print-color-adjust: exact;
  }
-.tool-content.quadrant-header.icon {
+.tool-content .quadrant-header.icon {
  font-size: 0.6875rem;
  }
-.tool-content.quadrant-body {
+.tool-content .quadrant-body {
  padding: 5px 10px 7px;
  }
-.tool-content.metric {
+.tool-content .metric {
  padding: 4px 0;
  }
-.tool-content.metric-name {
+.tool-content .metric-name {
  font-size: 9.5px;
  margin-bottom: 1px;
  }
-.tool-content.metric-name.de-name {
+.tool-content .metric-name.de-name {
  font-size: 8.5px;
  }
-.tool-content.formula-row {
+.tool-content .formula-row {
  margin: 1px 0;
  gap: 4px;
  }
-.tool-content.formula-label {
+.tool-content .formula-label {
  font-size: 7.5px;
  }
-.tool-content.formula {
+.tool-content .formula {
  font-size: 8.5px;
  padding: 1px 5px;
  border-radius: 3px;
  }
-.tool-content.badge {
+.tool-content .badge {
  font-size: 7.5px;
  padding: 1px 5px;
  border-radius: 7px;
  -webkit-print-color-adjust: exact;
  print-color-adjust: exact;
  }
-.tool-content.benchmark {
+.tool-content .benchmark {
  margin-top: 1px;
  gap: 3px;
  }

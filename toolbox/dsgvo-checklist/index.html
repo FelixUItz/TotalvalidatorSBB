@@ -30,7 +30,7 @@
  /* Page-specific styles for DSGVO Checklist */
 
  /* Progress Section */
-.tool-content.progress-section {
+.tool-content .progress-section {
  background: #fff;
  border-bottom: 1px solid #E2E8F0;
  padding: 16px 0;
@@ -39,48 +39,48 @@
  z-index: 100;
  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
  }
-.tool-content.progress-inner {
+.tool-content .progress-inner {
  max-width: 900px;
  margin: 0 auto;
  padding: 0 15px;
  }
-.tool-content.progress-header {
+.tool-content .progress-header {
  display: flex;
  justify-content: space-between;
  align-items: center;
  margin-bottom: 6px;
  }
-.tool-content.progress-label {
+.tool-content .progress-label {
  font-size: 0.8125rem;
  font-weight: 600;
  color: #1C1D1F;
  }
-.tool-content.progress-count {
+.tool-content .progress-count {
  font-size: 0.8125rem;
  font-weight: 600;
  color: #FF8C00;
  }
-.tool-content.progress-bar-track {
+.tool-content .progress-bar-track {
  width: 100%;
  height: 10px;
  background: #E2E8F0;
  border-radius: 999px;
  overflow: hidden;
  }
-.tool-content.progress-bar-fill {
+.tool-content .progress-bar-fill {
  height: 100%;
  width: 0%;
  background: linear-gradient(90deg, #FF8C00, #28A745);
  border-radius: 999px;
  transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
  }
-.tool-content.progress-badges {
+.tool-content .progress-badges {
  display: flex;
  gap: 12px;
  margin-top: 8px;
  flex-wrap: wrap;
  }
-.tool-content.progress-badge {
+.tool-content .progress-badge {
  display: inline-flex;
  align-items: center;
  gap: 5px;
@@ -88,18 +88,18 @@
  font-weight: 500;
  color: #6B7280;
  }
-.tool-content.progress-badge-dot {
+.tool-content .progress-badge-dot {
  width: 10px;
  height: 10px;
  border-radius: 50%;
  flex-shrink: 0;
  }
-.tool-content.progress-badge-dot.kritisch { background: #DC3545; }
-.tool-content.progress-badge-dot.wichtig { background: #FF8C00; }
-.tool-content.progress-badge-dot.best-practice { background: #28A745; }
+.tool-content .progress-badge-dot.kritisch { background: #DC3545; }
+.tool-content .progress-badge-dot.wichtig { background: #FF8C00; }
+.tool-content .progress-badge-dot.best-practice { background: #28A745; }
 
  /* Section Headers */
-.tool-content.section-header {
+.tool-content .section-header {
  display: flex;
  align-items: center;
  gap: 10px;
@@ -108,10 +108,10 @@
  padding-bottom: 8px;
  border-bottom: 2px solid #E2E8F0;
  }
-.tool-content.section-header:first-child {
+.tool-content .section-header:first-child {
  margin-top: 0;
  }
-.tool-content.section-icon {
+.tool-content .section-icon {
  width: 40px;
  height: 40px;
  border-radius: 8px;
@@ -121,22 +121,22 @@
  font-size: 1rem;
  flex-shrink: 0;
  }
-.tool-content.section-icon.kritisch { background: #FEE2E2; }
-.tool-content.section-icon.wichtig { background: #FFF7ED; }
-.tool-content.section-icon.best-practice { background: #D1FAE5; }
-.tool-content.section-title {
+.tool-content .section-icon.kritisch { background: #FEE2E2; }
+.tool-content .section-icon.wichtig { background: #FFF7ED; }
+.tool-content .section-icon.best-practice { background: #D1FAE5; }
+.tool-content .section-title {
  font-size: 1rem;
  font-weight: 700;
  color: #1C1D1F;
  }
-.tool-content.section-subtitle {
+.tool-content .section-subtitle {
  font-size: 0.75rem;
  color: #6B7280;
  font-weight: 500;
  }
 
  /* Checkpoint Cards */
-.tool-content.checkpoint {
+.tool-content .checkpoint {
  background: #fff;
  border: 1px solid #E2E8F0;
  border-radius: 12px;
@@ -144,14 +144,14 @@
  overflow: hidden;
  transition: box-shadow 0.2s ease, border-color 0.2s ease;
  }
-.tool-content.checkpoint:hover {
+.tool-content .checkpoint:hover {
  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
  }
-.tool-content.checkpoint.checked {
+.tool-content .checkpoint.checked {
  border-color: #28A745;
  background: #F0FDF4;
  }
-.tool-content.checkpoint-header {
+.tool-content .checkpoint-header {
  display: flex;
  align-items: flex-start;
  gap: 10px;
@@ -159,18 +159,18 @@
  cursor: pointer;
  user-select: none;
  }
-.tool-content.checkpoint-checkbox {
+.tool-content .checkpoint-checkbox {
  position: relative;
  flex-shrink: 0;
  margin-top: 2px;
  }
-.tool-content.checkpoint-checkbox input {
+.tool-content .checkpoint-checkbox input {
  position: absolute;
  opacity: 0;
  width: 0;
  height: 0;
  }
-.tool-content.checkbox-visual {
+.tool-content .checkbox-visual {
  display: flex;
  align-items: center;
  justify-content: center;
@@ -182,7 +182,7 @@
  transition: all 0.2s ease;
  cursor: pointer;
  }
-.tool-content.checkbox-visual svg {
+.tool-content .checkbox-visual svg {
  width: 14px;
  height: 14px;
  fill: none;
@@ -194,30 +194,30 @@
  transform: scale(0.5);
  transition: all 0.2s ease;
  }
-.tool-content.checkpoint-checkbox input:checked +.checkbox-visual {
+.tool-content .checkpoint-checkbox input:checked +.checkbox-visual {
  background: #28A745;
  border-color: #28A745;
  }
-.tool-content.checkpoint-checkbox input:checked +.checkbox-visual svg {
+.tool-content .checkpoint-checkbox input:checked +.checkbox-visual svg {
  opacity: 1;
  transform: scale(1);
  }
-.tool-content.checkpoint-checkbox input:focus-visible +.checkbox-visual {
+.tool-content .checkpoint-checkbox input:focus-visible +.checkbox-visual {
  outline: 2px solid #FF8C00;
  outline-offset: 2px;
  }
-.tool-content.checkpoint-content {
+.tool-content .checkpoint-content {
  flex: 1;
  min-width: 0;
  }
-.tool-content.checkpoint-top-row {
+.tool-content .checkpoint-top-row {
  display: flex;
  align-items: center;
  gap: 6px;
  flex-wrap: wrap;
  margin-bottom: 3px;
  }
-.tool-content.checkpoint-number {
+.tool-content .checkpoint-number {
  font-size: 0.625rem;
  font-weight: 700;
  color: #fff;
@@ -230,17 +230,17 @@
  justify-content: center;
  flex-shrink: 0;
  }
-.tool-content.checkpoint-title {
+.tool-content .checkpoint-title {
  font-size: 0.875rem;
  font-weight: 700;
  color: #1C1D1F;
  line-height: 1.3;
  }
-.tool-content.checkpoint.checked.checkpoint-title {
+.tool-content .checkpoint.checked.checkpoint-title {
  text-decoration: line-through;
  color: #6B7280;
  }
-.tool-content.priority-badge {
+.tool-content .priority-badge {
  font-size: 0.625rem;
  font-weight: 700;
  text-transform: uppercase;
@@ -250,24 +250,24 @@
  flex-shrink: 0;
  white-space: nowrap;
  }
-.tool-content.priority-badge.kritisch {
+.tool-content .priority-badge.kritisch {
  background: #FEE2E2;
  color: #DC3545;
  }
-.tool-content.priority-badge.wichtig {
+.tool-content .priority-badge.wichtig {
  background: #FFF7ED;
  color: #C26900;
  }
-.tool-content.priority-badge.best-practice {
+.tool-content .priority-badge.best-practice {
  background: #D1FAE5;
  color: #065F46;
  }
-.tool-content.checkpoint-article {
+.tool-content .checkpoint-article {
  font-size: 0.75rem;
  color: #6B7280;
  font-weight: 500;
  }
-.tool-content.checkpoint-toggle {
+.tool-content .checkpoint-toggle {
  display: flex;
  align-items: center;
  justify-content: center;
@@ -282,54 +282,54 @@
  transition: transform 0.3s ease;
  border-radius: 6px;
  }
-.tool-content.checkpoint-toggle:hover {
+.tool-content .checkpoint-toggle:hover {
  background: #F8FAFC;
  }
-.tool-content.checkpoint-toggle svg {
+.tool-content .checkpoint-toggle svg {
  width: 16px;
  height: 16px;
  transition: transform 0.3s ease;
  }
-.tool-content.checkpoint-toggle.open svg {
+.tool-content .checkpoint-toggle.open svg {
  transform: rotate(180deg);
  }
 
  /* Detail Panels */
-.tool-content.checkpoint-details {
+.tool-content .checkpoint-details {
  max-height: 0;
  overflow: hidden;
  transition: max-height 0.35s cubic-bezier(0.4, 0, 0.2, 1), padding 0.35s ease;
  }
-.tool-content.checkpoint-details.open {
+.tool-content .checkpoint-details.open {
  max-height: 500px;
  }
-.tool-content.checkpoint-details-inner {
+.tool-content .checkpoint-details-inner {
  padding: 0 16px 14px 40px;
  }
-.tool-content.checkpoint-explanation {
+.tool-content .checkpoint-explanation {
  font-size: 0.8125rem;
  color: #1C1D1F;
  line-height: 1.65;
  margin-bottom: 10px;
  }
-.tool-content.checkpoint-explanation ul {
+.tool-content .checkpoint-explanation ul {
  list-style: none;
  padding: 0;
  margin: 6px 0;
  }
-.tool-content.checkpoint-explanation ul li {
+.tool-content .checkpoint-explanation ul li {
  position: relative;
  padding-left: 16px;
  margin-bottom: 4px;
  }
-.tool-content.checkpoint-explanation ul li::before {
+.tool-content .checkpoint-explanation ul li::before {
  content: '\2192';
  position: absolute;
  left: 0;
  color: #FF8C00;
  font-weight: 600;
  }
-.tool-content.checkpoint-tip {
+.tool-content .checkpoint-tip {
  background: #FFF7ED;
  border: 1px solid #FED7AA;
  border-radius: 8px;
@@ -338,18 +338,18 @@
  line-height: 1.55;
  color: #92400E;
  }
-.tool-content.checkpoint-tip strong {
+.tool-content .checkpoint-tip strong {
  font-weight: 700;
  }
 
  /* Actions Row */
-.tool-content.actions-row {
+.tool-content .actions-row {
  display: flex;
  gap: 10px;
  margin-top: 30px;
  flex-wrap: wrap;
  }
-.tool-content.btn-action {
+.tool-content .btn-action {
  display: inline-flex;
  align-items: center;
  gap: 6px;
@@ -363,37 +363,37 @@
  text-decoration: none;
  font-family: inherit;
  }
-.tool-content.btn-action svg {
+.tool-content .btn-action svg {
  width: 16px;
  height: 16px;
  }
-.tool-content.btn-action--primary {
+.tool-content .btn-action--primary {
  background: #E63946;
  color: #fff;
  }
-.tool-content.btn-action--primary:hover {
+.tool-content .btn-action--primary:hover {
  background: #FF8C00;
  }
-.tool-content.btn-action--outline {
+.tool-content .btn-action--outline {
  background: #fff;
  color: #1C1D1F;
  border: 1px solid #E2E8F0;
  }
-.tool-content.btn-action--outline:hover {
+.tool-content .btn-action--outline:hover {
  border-color: #FF8C00;
  color: #FF8C00;
  }
-.tool-content.btn-action--danger {
+.tool-content .btn-action--danger {
  background: #fff;
  color: #DC3545;
  border: 1px solid #FECACA;
  }
-.tool-content.btn-action--danger:hover {
+.tool-content .btn-action--danger:hover {
  background: #FEE2E2;
  }
 
  /* Completion Banner */
-.tool-content.completion-banner {
+.tool-content .completion-banner {
  display: none;
  background: linear-gradient(135deg, #065F46, #047857);
  color: #fff;
@@ -402,16 +402,16 @@
  border-radius: 12px;
  margin-top: 30px;
  }
-.tool-content.completion-banner.visible {
+.tool-content .completion-banner.visible {
  display: block;
  animation: fadeSlideIn 0.5s ease;
  }
-.tool-content.completion-banner h2 {
+.tool-content .completion-banner h2 {
  font-size: 1.125rem;
  margin-bottom: 6px;
  color: #fff;
  }
-.tool-content.completion-banner p {
+.tool-content .completion-banner p {
  font-size: 0.8125rem;
  opacity: 0.9;
  margin: 0;
@@ -424,42 +424,42 @@
 
  /* Responsive */
  @media (max-width: 768px) {
-.tool-content.checkpoint-header { padding: 10px 12px; }
-.tool-content.checkpoint-details-inner { padding: 0 12px 10px 32px; }
-.tool-content.actions-row { flex-direction: column; }
-.tool-content.btn-action { justify-content: center; }
-.tool-content.progress-badges { gap: 8px; }
+.tool-content .checkpoint-header { padding: 10px 12px; }
+.tool-content .checkpoint-details-inner { padding: 0 12px 10px 32px; }
+.tool-content .actions-row { flex-direction: column; }
+.tool-content .btn-action { justify-content: center; }
+.tool-content .progress-badges { gap: 8px; }
  }
 
  /* Print Styles */
  @media print {
-.tool-content.progress-section {
+.tool-content .progress-section {
  position: static;
  box-shadow: none;
  }
-.tool-content.checkpoint {
+.tool-content .checkpoint {
  break-inside: avoid;
  box-shadow: none;
  }
-.tool-content.checkpoint-toggle {
+.tool-content .checkpoint-toggle {
  display: none;
  }
-.tool-content.checkpoint-details {
+.tool-content .checkpoint-details {
  max-height: none!important;
  overflow: visible!important;
  }
-.tool-content.actions-row,
-.tool-content.completion-banner {
+.tool-content .actions-row,
+.tool-content .completion-banner {
  display: none!important;
  }
-.tool-content.checkpoint,
-.tool-content.checkpoint.checked,
-.tool-content.priority-badge,
-.tool-content.section-icon,
-.tool-content.checkpoint-number,
-.tool-content.checkpoint-tip,
-.tool-content.progress-bar-fill,
-.tool-content.progress-badge-dot {
+.tool-content .checkpoint,
+.tool-content .checkpoint.checked,
+.tool-content .priority-badge,
+.tool-content .section-icon,
+.tool-content .checkpoint-number,
+.tool-content .checkpoint-tip,
+.tool-content .progress-bar-fill,
+.tool-content .progress-badge-dot {
  -webkit-print-color-adjust: exact;
  print-color-adjust: exact;
  }
