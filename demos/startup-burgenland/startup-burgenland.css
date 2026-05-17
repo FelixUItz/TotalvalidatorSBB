@@ -1076,3 +1076,10 @@ header .navbar-brand img {
         padding: 10px 8px !important;
     }
 }
+
+/* Blog hero: dynamic height, prevent title cutoff */
+.page-title-extra-large .extra-small-screen {
+    height: auto !important;
+    min-height: 300px;
+    padding: 80px 0 60px;
+}
