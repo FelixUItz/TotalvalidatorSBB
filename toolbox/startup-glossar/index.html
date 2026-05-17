@@ -41,7 +41,7 @@
  transform: translateY(-50%); color: #6B7280; pointer-events: none;
  }
 .tool-content #searchInput {
- width: 100%; padding: 14px 16px 14px 48px; font-size: 16px;
+ width: 100%; padding: 14px 16px 14px 48px; font-size: 1rem;
  font-family: inherit; border: 2px solid #E2E8F0; border-radius: 12px;
  background: #F8FAFC; transition: border-color 0.2s, box-shadow 0.2s; outline: none;
  }
@@ -51,13 +51,13 @@
 .tool-content #searchInput::placeholder { color: #9CA3AF; }
 .tool-content.search-info {
  display: flex; justify-content: space-between; align-items: center;
- margin-top: 10px; font-size: 13px; color: #6B7280;
+ margin-top: 10px; font-size: 0.8125rem; color: #6B7280;
  }
 .tool-content #resultCount { font-weight: 600; color: #E63946; }
 .tool-content.filters { padding: 16px 0 0; display: flex; flex-wrap: wrap; gap: 8px; }
 .tool-content.filter-btn {
  display: inline-flex; align-items: center; gap: 5px; padding: 7px 14px;
- font-size: 13px; font-family: inherit; font-weight: 500;
+ font-size: 0.8125rem; font-family: inherit; font-weight: 500;
  border: 1.5px solid #E2E8F0; border-radius: 20px; background: #fff;
  color: #1C1D1F; cursor: pointer; transition: all 0.15s; white-space: nowrap;
  }
@@ -66,7 +66,7 @@
 .tool-content.alpha-nav { padding: 14px 0 6px; display: flex; flex-wrap: wrap; gap: 4px; justify-content: center; }
 .tool-content.alpha-btn {
  width: 34px; height: 34px; display: inline-flex; align-items: center;
- justify-content: center; font-size: 13px; font-weight: 600; font-family: inherit;
+ justify-content: center; font-size: 0.8125rem; font-weight: 600; font-family: inherit;
  border: 1.5px solid #E2E8F0; border-radius: 8px; background: #fff;
  color: #1C1D1F; cursor: pointer; transition: all 0.15s;
  }
@@ -81,7 +81,7 @@
 .tool-content.letter-heading span {
  display: inline-flex; align-items: center; justify-content: center;
  width: 44px; height: 44px; background: #E63946; color: #fff;
- font-size: 22px; font-weight: 800; border-radius: 10px; flex-shrink: 0;
+ font-size: 1.375rem; font-weight: 800; border-radius: 10px; flex-shrink: 0;
  }
 .tool-content.letter-heading hr { flex: 1; border: none; border-top: 2px solid #E2E8F0; }
 .tool-content.entry {
@@ -90,11 +90,11 @@
  }
 .tool-content.entry:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.06); border-color: #D1D5DB; }
 .tool-content.entry-header { display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px; margin-bottom: 6px; }
-.tool-content.entry-term { font-size: 18px; font-weight: 700; color: #E63946; }
-.tool-content.entry-en { font-size: 14px; color: #6B7280; font-weight: 400; }
-.tool-content.entry-short { font-size: 15px; font-weight: 500; color: #1C1D1F; margin-bottom: 8px; }
+.tool-content.entry-term { font-size: 1.125rem; font-weight: 700; color: #E63946; }
+.tool-content.entry-en { font-size: 0.875rem; color: #6B7280; font-weight: 400; }
+.tool-content.entry-short { font-size: 0.9375rem; font-weight: 500; color: #1C1D1F; margin-bottom: 8px; }
 .tool-content.entry-cat {
- display: inline-flex; align-items: center; gap: 4px; font-size: 12px;
+ display: inline-flex; align-items: center; gap: 4px; font-size: 0.75rem;
  font-weight: 600; padding: 3px 10px; border-radius: 12px; margin-bottom: 10px;
  }
 .tool-content.cat-finanzkennzahl { background: #FEF2F2; color: #E63946; }
@@ -104,27 +104,27 @@
 .tool-content.cat-growth { background: #FEF2F2; color: #C62833; }
 .tool-content.cat-organisation { background: #F3F4F6; color: #4B5563; }
 .tool-content.entry-cat svg,.tool-content.filter-btn svg { width: 14px; height: 14px; vertical-align: -2px; flex-shrink: 0; }
-.tool-content.entry-desc { font-size: 14px; color: #374151; line-height: 1.65; margin-bottom: 0; }
+.tool-content.entry-desc { font-size: 0.875rem; color: #374151; line-height: 1.65; margin-bottom: 0; }
 .tool-content.entry-formula {
  margin-top: 10px; padding: 10px 14px; background: #F3F4F6; border-radius: 8px;
- font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 13px;
+ font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 0.8125rem;
  color: #E63946; border-left: 3px solid #FF8C00;
  }
-.tool-content.entry-example { margin-top: 8px; font-size: 13px; color: #6B7280; font-style: italic; }
+.tool-content.entry-example { margin-top: 8px; font-size: 0.8125rem; color: #6B7280; font-style: italic; }
 .tool-content.entry.hidden { display: none; }
 .glossar-count-badge {
  display: inline-block; margin-top: 10px; background: rgba(255,255,255,0.15);
  border: 1px solid rgba(255,255,255,0.25); border-radius: 20px;
- padding: 5px 16px; font-size: 13px; font-weight: 500; color: rgba(255,255,255,0.9);
+ padding: 5px 16px; font-size: 0.8125rem; font-weight: 500; color: rgba(255,255,255,0.9);
  }
 .tool-content.no-results { text-align: center; padding: 60px 20px; color: #6B7280; display: none; }
 .tool-content.no-results.visible { display: block; }
-.tool-content.no-results h3 { font-size: 20px; color: #1C1D1F; margin-bottom: 8px; }
+.tool-content.no-results h3 { font-size: 1.25rem; color: #1C1D1F; margin-bottom: 8px; }
  @media (max-width: 640px) {
 .tool-content.entry { padding: 16px; }
-.tool-content.entry-term { font-size: 16px; }
-.tool-content.alpha-btn { width: 30px; height: 30px; font-size: 12px; }
-.tool-content.filter-btn { font-size: 12px!important; padding: 6px 10px!important; }
+.tool-content.entry-term { font-size: 1rem; }
+.tool-content.alpha-btn { width: 30px; height: 30px; font-size: 0.75rem; }
+.tool-content.filter-btn { font-size: 0.75rem!important; padding: 6px 10px!important; }
  }
  @media print {
 .tool-content.glossary-search-section { display: none!important; }
@@ -285,7 +285,7 @@
  <div class="container">
  <div class="row align-items-center mb-4 sm-mb-6">
  <div class="col-md-10 col-sm-8 text-center text-sm-start xs-mb-25px">
- <h5 class="mb-0 text-dark-gray fw-400 ls-minus-1px">Noch Fragen? <a href="mailto:startup@wirtschaftsagentur-burgenland.at" class="text-decoration-line-bottom-medium fw-600 text-sb-red text-sb-red-hover">Kontaktiere uns!</a></h5>
+ <h3 class="h5 mb-0 text-dark-gray fw-400 ls-minus-1px">Noch Fragen? <a href="mailto:startup@wirtschaftsagentur-burgenland.at" class="text-decoration-line-bottom-medium fw-600 text-sb-red text-sb-red-hover">Kontaktiere uns!</a></h3>
  </div>
  <div class="col-md-2 col-sm-4 text-center text-sm-end">
  <a href="/index.html" class="footer-logo d-inline-block">
@@ -327,12 +327,12 @@
  <script type="text/javascript" src="/js/main.js"></script>
  <script>document.querySelectorAll(".scroll-progress").forEach(function(el){el.remove();});</script>
  <!-- Cookie Consent Banner -->
-<div id="cookieConsent" style="display:none;position:fixed;bottom:0;left:0;right:0;background:#1C1D1F;color:#e0e0e0;padding:16px 24px;z-index:99999;box-shadow:0 -2px 10px rgba(0,0,0,0.3);font-family:inherit;font-size:14px;">
+<div id="cookieConsent" style="display:none;position:fixed;bottom:0;left:0;right:0;background:#1C1D1F;color:#e0e0e0;padding:16px 24px;z-index:99999;box-shadow:0 -2px 10px rgba(0,0,0,0.3);font-family:inherit;font-size:0.875rem;">
  <div style="max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;">
  <p style="margin:0;flex:1;min-width:250px;">Diese Website verwendet Cookies, um deine Erfahrung zu verbessern. <a href="https://wirtschaftsagentur-burgenland.at/datenschutz/" style="color:#dc3545;text-decoration:underline;" target="_blank" rel="noopener noreferrer">Mehr erfahren</a></p>
  <div style="display:flex;gap:10px;flex-shrink:0;">
- <button onclick="declineCookies()" style="background:transparent;border:1px solid #666;color:#ccc;padding:8px 20px;border-radius:4px;cursor:pointer;font-size:14px;">Ablehnen</button>
- <button onclick="acceptCookies()" style="background:#dc3545;border:none;color:#fff;padding:8px 20px;border-radius:4px;cursor:pointer;font-size:14px;font-weight:600;">Akzeptieren</button>
+ <button onclick="declineCookies()" style="background:transparent;border:1px solid #666;color:#ccc;padding:8px 20px;border-radius:4px;cursor:pointer;font-size:0.875rem;">Ablehnen</button>
+ <button onclick="acceptCookies()" style="background:#dc3545;border:none;color:#fff;padding:8px 20px;border-radius:4px;cursor:pointer;font-size:0.875rem;font-weight:600;">Akzeptieren</button>
  </div>
  </div>
 </div>
