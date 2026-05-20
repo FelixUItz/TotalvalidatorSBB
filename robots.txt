@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /.git/
 
-Sitemap: https://startup-burgenland.at/sitemap.xml
+Sitemap: https://www.startup-burgenland.at/sitemap.xml
